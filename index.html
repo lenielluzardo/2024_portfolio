@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <title>Leniel Luzardo</title>
+  <title>{dev_name}</title>
 </head>
 <body>
   <main>
     <nav>
-      <img src="" alt="Leniel Logo"/>
+      <img src="" alt="{dev_log}"/>
 
     </nav>
     <div class="resume">
 
       <div class="about">
         <p>
-          Hi, I'm Leniel. a <b class="curr_ocupation">Software engineer.</b>
+          Hi, I'm {dev_name}. a <b class="curr_ocupation">{current_ocupation}.</b>
         </p>
         <p>
-          currently as a <b class="curr_stack">Web Developer with React.js & .NET.</b>
+          currently as a <b class="curr_stack">{current_stack}.</b>
         </p>
       </div> <!--about-->
 
@@ -27,35 +27,14 @@
           <h3>My Experience:</h3>
           <ul class="jobs">
             <li class="job">
-              <p><b>Cognizant:</b> Company description.</p>
-                <p><b>Project title:</b> Project description.</p>
-                <ul>
-                   <li>Skill #1</li>
-                   <li>Skill #2</li>
-                   <li>Skill #3</li>
+                <p><b>{job_title}:</b> {job_description}.</p>
+                <p><b>{project_name}:</b> {project_description}.</p>
+                <ul class="skills">
+                   <li class="skill">{skill_#}</li>
+                   <li class="skill">{skill_#}</li>
+                   <li class="skill">{skill_#}</li>
                 </ul>
             </li>
-
-            <li class="job">
-              <p><b>Pwc:</b> Company description.</p>
-                <p><b>Project title:</b> Project description.</p>
-                <ul>
-                   <li>Skill #1</li>
-                   <li>Skill #2</li>
-                   <li>Skill #3</li>
-                </ul>
-            </li>
-
-            <li class="job">
-                <p><b>Globant:</b> Company description.</p>
-                <p><b>Project title:</b> Project description.</p>
-                <ul>
-                   <li>Skill #1</li>
-                   <li>Skill #2</li>
-                   <li>Skill #3</li>
-                </ul>
-            </li>
-
           </ul> <!--jobs-->
 
         </div> <!--experience-->
@@ -64,8 +43,7 @@
           <h3>My Education:</h3>
           <ul class="careers">
             <li class="career">
-              <p><b>Center:</b>Center description.</p>
-              <p><b>Project title:</b> Project description.</p>
+              <p><b>{center_name}:</b>{center_description}.</p>
             </li>
           </ul>
         </div> <!--education-->

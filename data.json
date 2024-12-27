@@ -1,0 +1,29 @@
+{
+  "webTitle":"Web Tile",
+  "ownerName":"Owner Name",
+  "currentOcupation":"Owner currnet ocupation",
+  "currentStack":"Owner current stack",
+  "experience":[
+    {
+      "jobTitle":"Job title",
+      "jobDescription":"Job description.",
+      "startDate":"2024-01-01:0000",
+      "endDate":"2024-01-01:0000",
+      "projectName":"Project name",
+      "projectDescription":"Project description.",
+      "skills":[
+        "Skill #1","Skill #2","Skill #3"
+      ]
+    }
+  ],
+  "education":[
+    {
+      "centerName":"Center Name",
+      "centerDescription":"Center Description.",
+      "startDate":"2024-01-01:0000",
+      "endDate":"2024-01-01:0000"
+
+    }
+  ]
+
+}

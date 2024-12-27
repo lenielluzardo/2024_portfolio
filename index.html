@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <title>{dev_name}</title>
+  <title>{page_title}</title>
 </head>
 <body>
   <main>
@@ -27,8 +27,8 @@
           <h3>My Experience:</h3>
           <ul class="jobs">
             <li class="job">
-                <p><b>{job_title}:</b> {job_description}.</p>
-                <p><b>{project_name}:</b> {project_description}.</p>
+                <p><b id="job_title">{job_title}:</b> {job_description}.</p>
+                <p><b id="project_name">{project_name}:</b>{project_description}.</p>
                 <ul class="skills">
                    <li class="skill">{skill_#}</li>
                    <li class="skill">{skill_#}</li>
@@ -51,6 +51,6 @@
 
   </main>
   <div id="app"></div>
-  <script src="./index.js"></script>
+  <script type="module" src="./load.js"></script>
 </body>
 </html>

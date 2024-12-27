@@ -1,9 +1,18 @@
+/* assets
+1bgcolor: #171717;
+2bgcolor: #373737;
+primary: #641AB7;
+secondary: #9D46FF;
+complimentary: #F9F9A9; # for some text highlights
+
+*/
+
 body {
   margin:unset;
-  background-color:dimgray;
+  background-color:#171717;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 .work-experience{
-  background-color
 }

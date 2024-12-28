@@ -16,19 +16,17 @@
 
       <div class="about">
         <p>
-          Hi, I'm {dev_name}. a <b class="curr_ocupation">{current_ocupation}.</b>
-        </p>
-        <p>
-          currently as a <b class="curr_stack">{current_stack}.</b>
+          Hi, I'm <span id="dev_name">{dev_name}.</span>
+           a <b id="curr_ocupation">{current_ocupation}.</b>
+          currently working with <b id="curr_stack">{current_stack}.</b>
         </p>
       </div> <!--about-->
 
         <div class="experience">
           <h3>My Experience:</h3>
-          <ul class="jobs">
+          <ul id="jobs">
             <li class="job">
-                <p><b id="job_title">{job_title}:</b> {job_description}.</p>
-                <p><b id="project_name">{project_name}:</b>{project_description}.</p>
+                <p><b class="job_title">{job_title}:</b> <span class="job_desc">{job_description}.</span></p>
                 <ul class="skills">
                    <li class="skill">{skill_#}</li>
                    <li class="skill">{skill_#}</li>
@@ -41,7 +39,7 @@
 
         <div class="education">
           <h3>My Education:</h3>
-          <ul class="careers">
+          <ul id="careers">
             <li class="career">
               <p><b>{center_name}:</b>{center_description}.</p>
             </li>

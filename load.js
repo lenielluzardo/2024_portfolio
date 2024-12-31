@@ -7,46 +7,42 @@ let ul_jobs = document.getElementById('jobs');
 let ul_careers = document.getElementById('careers'); 
 
 /* Start region: Functions definition */
-function loadExperienceSection(){
-  
-  // Reset elements for html template.
-  ul_jobs.innerHTML = null;
+
+function loadListSection(list, items, liClass, bClass, spanClass){
+  // Reset html default template.
+  list.innerHTML = null;
 
   // Load UL with data.
-  data.experience.forEach(job => {
-    let li_job = document.createElement('li');
-    li_job.className = 'job';
+  items.forEach(item => {
+    let li = document.createElement('li');
+    li.className = liClass;
 
     let p = document.createElement('p');
         
-    let b_jobTitle = document.createElement('b');
-    b_jobTitle.className = 'job_title';
-    b_jobTitle.innerText = `${job.jobTitle}: `;
+    let b = document.createElement('b');
+    b.className = bClass;
+    b.innerText = `${item.place}: `;
     
-    let span_jobDescription = document.createElement('span');
-    span_jobDescription.className = 'job_desc';
-    span_jobDescription.innerText = job.jobDescription;
+    let span = document.createElement('span');
+    span.className = spanClass;
+    span.innerText = item.description;
  
-    p.appendChild(b_jobTitle);
-    p.appendChild(span_jobDescription);
-    li_job.appendChild(p);
+    p.appendChild(b);
+    p.appendChild(span);
+    li.appendChild(p);
 
-    ul_jobs.appendChild(li_job);
-  }) 
+    list.appendChild(li);
+  }); 
 }
 
-function loadEducationSection(){
-  // Reset elements for html template.
-  ul_careers.innerHTML = null;
-}
 
 function loadDocumentContent(){
   document.title = data.webTitle;
   span_devName.innerText = data.ownerName;
   b_currOcupation.innerText = data.currentOcupation;
   b_currStack.innerText = data.currentStack;
-  loadExperienceSection();
-  loadEducationSection();
+  loadListSection(ul_jobs, data.experience, 'job', 'job_title', 'job_desc');
+  loadListSection(ul_careers, data.education, 'career', 'career_title', 'career_desc');
 }
 
 function docContentLoadedHandler() {

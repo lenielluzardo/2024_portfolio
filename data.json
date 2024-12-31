@@ -5,8 +5,9 @@
   "currentStack":"Owner current stack",
   "experience":[
     {
-      "jobTitle":"Job title",
-      "jobDescription":"Job description.",
+      "place":"Job place",
+      "title":"Job title/role",
+      "description":"Job description.",
       "startDate":"2024-01-01:0000",
       "endDate":"2024-01-01:0000",
       "projectName":"Project name",
@@ -18,8 +19,9 @@
   ],
   "education":[
     {
-      "centerName":"Center Name",
-      "centerDescription":"Center Description.",
+      "place":"Center Name",
+      "title":"Education title",
+      "description":"Center Description.",
       "startDate":"2024-01-01:0000",
       "endDate":"2024-01-01:0000"
 

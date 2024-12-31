@@ -1,18 +1,26 @@
-/* assets
-1bgcolor: #171717;
-2bgcolor: #373737;
-primary: #641AB7;
-secondary: #9D46FF;
-complimentary: #F9F9A9; # for some text highlights
-
-*/
+.assets {
+/* 1bgcolor */
+color: #171717;  
+/* 2bgcolor */
+color: #373737;
+/* primary; */
+color: #641AB7;
+/* secondary */
+color: #9D46FF;
+/* complimentary:# for some text highlights */
+color: #F9F9A9;
+}
 
 body {
-  margin:unset;
-  background-color:#171717;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+color: magenta;
+color: cyan;
+color: yellow;
 
+margin:unset;
+background-color:#171717;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
 }
+
 .work-experience{
 }
